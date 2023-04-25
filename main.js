@@ -17,6 +17,12 @@ $(document).ready(function () {
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn(1000);
         $('#nome-exercicio').val('')
+        $("#selecionado").on("click", "li", function () {
+
+            $(this).css("text-decoration", "line-through");
+
+        });
+
     })
 
 })
